@@ -1,5 +1,5 @@
 {% set name = "nlpaug" %}
-{% set version = "1.1.3" %}
+{% set version = "1.1.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/makcedward/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 99064a1f599c3b162851458ad80265e7f10dd31062e33f3f76b233b62361d1c6
+  sha256: 02fb6b48d67b0a495dfe079b550ebf84e9c014c1bace8a68cb613612d072acea
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
