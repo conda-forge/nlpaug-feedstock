@@ -20,6 +20,7 @@ requirements:
     - pip
   run:
     - numpy >=1.16.2
+    - pandas
     - python >=3.6
     - requests >=2.22.0
 
