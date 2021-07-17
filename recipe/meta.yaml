@@ -24,6 +24,7 @@ requirements:
     - numpy >=1.16.2
     - pandas
     - python >=3.6
+    - pytorch-cpu ==1.2.0
     - requests >=2.22.0
 
 test:
