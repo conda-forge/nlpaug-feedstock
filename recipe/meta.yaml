@@ -1,5 +1,5 @@
 {% set name = "nlpaug" %}
-{% set version = "1.1.5" %}
+{% set version = "1.1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/makcedward/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: ee50e237769ba21faf23f3b6b96836fd741cad67389e1f30c03c249a99c065ef
+  sha256: b0699a7f2088d26469d5c6042cefeb6dd6384a592067e146f12f5013858e4948
 
 build:
   noarch: python
@@ -20,7 +20,6 @@ requirements:
     - pip
   run:
     - datasets >=1.8.0
-    - huggingface_hub ==0.0.12
     - numpy >=1.16.2
     - pandas
     - python >=3.6
