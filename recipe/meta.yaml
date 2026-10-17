@@ -1,5 +1,6 @@
 {% set name = "nlpaug" %}
 {% set version = "2.0.2" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
