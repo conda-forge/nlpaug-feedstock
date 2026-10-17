@@ -1,5 +1,6 @@
 {% set name = "nlpaug" %}
-{% set version = "1.1.11" %}
+{% set version = "2.0.2" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,28 +8,25 @@ package:
 
 source:
   url: https://github.com/makcedward/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: dab68723994c6b4503f20f543dad80a1a2177791520115313a80a6d1167e69a4
+  sha256: 298c9c6b369d41f98a18c652ff5dd349304df01cc5e9b06d44dbc1d3eceba9eb
 
 build:
   noarch: python
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - setuptools >=83
+    - wheel
   run:
-    - datasets >=1.8.0
-    - gdown >=4.0.0
-    - numpy >=1.16.2
-    - pandas
     - python >={{ python_min }}
-    - pytorch >=1.2.0
-    - requests >=2.22.0
-    - sentencepiece
-    - transformers
+    - numpy >=2.4.6,<2.5
+    - pandas >=3.0.3,<4
+    - gdown >=5.2,<6
+    - requests >=2.32,<3
 
 test:
   imports:
