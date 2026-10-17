@@ -1,5 +1,5 @@
 {% set name = "nlpaug" %}
-{% set version = "2.0.5" %}
+{% set version = "2.0.6" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/makcedward/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 0d166dd1ab47b208cc8547a2cbccdae906765891588768bde2577d0e3b1a32fc
+  sha256: e67677c5c6c98614c62add0d912ed3fd1c16fac003deb33a7e00d85149428984
 
 build:
   noarch: python
