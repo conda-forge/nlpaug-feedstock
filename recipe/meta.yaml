@@ -18,15 +18,16 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - setuptools >=83
+    - wheel
   run:
     - datasets >=1.8.0
-    - gdown >=4.0.0
-    - numpy >=1.16.2
-    - pandas
+    - gdown >=5.2
+    - numpy >=2.4.6,<2.5
+    - pandas >=3.0.3,<4
     - python >={{ python_min }}
     - pytorch >=1.2.0
-    - requests >=2.22.0
+    - requests >=2.32,<3
     - sentencepiece
     - transformers
 
