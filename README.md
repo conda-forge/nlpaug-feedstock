@@ -10,14 +10,13 @@ Package license: MIT
 Summary: Natrual language processing data Augmentation library
 
 This python library helps you with augmenting NLP for your machine learning
- projects. `Augmenter` is the basic element of augmentation while `Flow` is
- a pipeline to orchestra multi augmenter together. Nlpaug generates
- synthetic data for improving model performance without manual effort. It is
- a simple and easy-to-use and lightweight library where you can augment data
- in 3 lines of code, and features plug and play to any machine leanring
- and neural network frameworks (e.g. scikit-learn, PyTorch, TensorFlow).
- Nlpaug supports textual and audio input as well.
-
+projects. `Augmenter` is the basic element of augmentation while `Flow` is
+a pipeline to orchestra multi augmenter together. Nlpaug generates
+synthetic data for improving model performance without manual effort. It is
+a simple and easy-to-use and lightweight library where you can augment data
+in 3 lines of code, and features plug and play to any machine leanring
+and neural network frameworks (e.g. scikit-learn, PyTorch, TensorFlow).
+Nlpaug supports textual and audio input as well.
 
 Current build status
 ====================
